@@ -1,6 +1,13 @@
-<?php require_once("../../conexao/conexao.php")
-
-
+<?php require_once("/xampp/htdocs/avancado/estudosPhp/estudosPhp/conexao/conexao.php");
+?>
+<?php
+// consulta ao banco de dados
+$produtos = "SELECT produtoID, nomeproduto, tempoentrega";
+$produtos .= "FROM produtos";
+$resultado = mysqli_query($conecta,$produtos);
+if (!$resultado){
+    die("falha na consulta ao banco");
+}
 ?>
 <!doctype html>
 <html>
@@ -18,8 +25,18 @@
         <?php include_once("../_incluir/funcoes.php"); ?>
         
         <main>  
-          
-             
+          <?php
+          while($linha = mysqli_fetch_assoc($resultado)){
+
+              ?>
+        <ul>
+            <li><?php echo $linha["nomeproduto"]?></li>
+            <li><?php echo $linha["nomeproduto"]?></li>
+            <li><?php echo $linha["nomeproduto"]?></li>
+        </ul>
+             <?php
+  }
+             ?>
           
     
 
