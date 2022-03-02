@@ -1,6 +1,6 @@
 <header>
     <div id="header_central">
-        <img src="/avancado/public/_assets/logo_andes.gif">
-        <img src="/avancado/public/_assets/text_bnwcoffee.gif">
+        <img style="max-width: 110px;"  src="../_incluir/gian.png">
+        <img style="max-width: 250px; margin-bottom: 15px;" src="../_incluir/mini.png" alt="">
     </div>
 </header>

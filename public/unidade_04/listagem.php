@@ -1,13 +1,6 @@
-<?php require_once("../../conexao/conexao.php"); ?>
-<?php
-//consulta no banco de dados
-$produtos = "SELECT produtoID, nomeproduto, tempo entrega";
-$produtos .= "FROM produtos";
-$resultado = mysqli_query($conecta, $produtos);
+<?php require_once("../../conexao/conexao.php")
 
-if(!$resultado){
-  die ("falha na consulta ao banco");
-}
+
 ?>
 <!doctype html>
 <html>

@@ -1,5 +1,5 @@
 <footer>
     <div id="footer_central">
-    <p>ANDES é uma empresa fictícia, usada para o curso PHP Integração com MySQL.</p>
+    <p>Gian MiniMercado, aqui você encontra tudo.</p>
     </div>
 </footer>
